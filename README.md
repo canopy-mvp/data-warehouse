@@ -1,2 +1,10 @@
 # data-warehouse
-dbt models and data warehouse configuration
+
+dbt models for analytics data warehouse
+
+## Getting Started
+
+```bash
+npm install
+npm run build
+```

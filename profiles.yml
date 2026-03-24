@@ -1,0 +1,22 @@
+# VIOLATION: Plaintext database password
+canopy_warehouse:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: warehouse-dev.cluster-abc123.us-east-1.rds.amazonaws.com
+      port: 5432
+      user: canopy_etl
+      password: Super$ecretP@ssw0rd!2025
+      dbname: canopy_analytics
+      schema: public
+      threads: 4
+    prod:
+      type: postgres
+      host: warehouse-prod.cluster-xyz789.us-east-1.rds.amazonaws.com
+      port: 5432
+      user: canopy_etl_prod
+      password: Pr0d$ecretP@ssw0rd!2025
+      dbname: canopy_analytics
+      schema: public
+      threads: 8
