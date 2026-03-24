@@ -1,0 +1,12 @@
+canopy_warehouse:
+  target: staging
+  outputs:
+    staging:
+      type: postgres
+      host: warehouse-staging.cluster-stg456.us-east-1.rds.amazonaws.com
+      port: 5432
+      user: canopy_etl_staging
+      password: Stag!ngP@ssw0rd#2025
+      dbname: canopy_analytics_staging
+      schema: public
+      threads: 4
